@@ -3375,6 +3375,41 @@ a {
 .cid-uSUYvpWqRL .card-title {
   text-align: center;
 }
+.cid-uUvjgvfAMt {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-uUvjgvfAMt .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uUvjgvfAMt .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uUvjgvfAMt .item-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 0 !important;
+}
+@media (max-width: 767px) {
+  .cid-uUvjgvfAMt .item-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-uUvjgvfAMt .mbr-iconfont {
+  font-size: 3rem;
+  color: #2e481a;
+  padding-right: 2rem;
+}
+.cid-uUvjgvfAMt .content-head {
+  max-width: 800px;
+}
 .cid-uSWipsWrha {
   z-index: 1000;
   width: 100%;
