@@ -57,11 +57,9 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 35,
+    "uniqCompNum": 33,
     "versionPublish": "6.1.12",
-    "screenshot": "screenshot.png",
-    "publishType": "mbrsite",
-    "mbrsite": "mbrsite://%7B%22id%22%3A2601051%2C%22domain%22%3A%22xexfkajvdm.mobirisesite.com%22%7D"
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "aboutus.html": {
@@ -4362,46 +4360,6 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".content-text": {
-              "max-width": "800px"
-            }
-          },
-          "_name": "video02",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video02\" group=\"Image & Video\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n    <input type=\"range\" name=\"videoWidth\" title=\"Video\" min=\"4\" max=\"12\" step=\"1\" value=\"6\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\">\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\" selected>\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div mbr-video class=\"mbr-figure col-12 mb-5 col-md-{{videoWidth}}\">\n        <iframe src=\"https://www.google.com/search?q=WORLD+HEALTH+ORGANIZATION+LASSA+FEVER+VIDEOS+ON+YOUTUBE&sca_esv=05c55603450aca5f&sxsrf=ANbL-n6S1rs76n3O1_YiDhGmxu5gGVReWQ%3A1776865026026&ei=As_oaZioAfnShbIPn57XyAM&biw=1280&bih=551&ved=0ahUKEwiYscKFyoGUAxV5aUEAHR_PFTkQ4dUDCBE&uact=5&oq=WORLD+HEALTH+ORGANIZATION+LASSA+FEVER+VIDEOS+ON+YOUTUBE&gs_lp=Egxnd3Mtd2l6LXNlcnAiN1dPUkxEIEhFQUxUSCBPUkdBTklaQVRJT04gTEFTU0EgRkVWRVIgVklERU9TIE9OIFlPVVRVQkUyBRAhGKABSLv7AVCfLliL1AFwA3gAkAEAmAGdAqAB2SeqAQQyLTIyuAEDyAEA-AEB-AECmAIVoAK0JMICBxAjGLACGCfCAgUQABjvBcICCBAAGIAEGKIEwgIEECMYJ8ICBBAAGB7CAgsQABiABBiGAxiKBcICBhAAGBYYHsICBBAhGBXCAgcQIRigARgKmAMAiAYBkgcGMS4wLjIwoAf2eLIHBDItMjC4B68kwgcIMC45LjExLjHIB02ACAA&sclient=gws-wiz-serp&loop=1&autoplay=1#fpstate=ive&vld=cid:d4573f85,vid:plDAEZjhM3Y,st:0\"></iframe>\n      </div>\n    </div>\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 content-text\">\n        <h4 class=\"mbr-description mbr-fonts-style mb-3 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-description\"><b>WHO Warns on Endemic Diseases Like Lassa Fever, mP</b><span style=\"font-size: 18.5448px;\"><b>ox</b></span><b>; Ebola; Pandemic Influenza ect.</b></h4>\n        <p class=\"mbr-description mbr-fonts-style mb-0 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\"><a href=\"https://www.facebook.com/oyoeoc\" class=\"text-primary\">Oyo State EOC Facebook</a></p>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_cid": "vhwEHlGQau",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "video02-y"
         },
         {
           "alias": false,
